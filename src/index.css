@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Newsreader", ui-serif, Georgia, serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-on-surface-variant: #5a605e;
+  --color-primary-fixed: #e2e2e2;
+  --color-secondary-dim: #535353;
+  --color-error: #9e422c;
+  --color-outline: #767c79;
+  --color-outline-variant: #adb3b0;
+  --color-secondary: #5f5f5f;
+  --color-surface-bright: #f9f9f7;
+  --color-surface-container: #ebefec;
+  --color-on-primary: #f8f8f8;
+  --color-on-surface: #2d3432;
+  --color-surface-variant: #dee4e0;
+  --color-surface-container-highest: #dee4e0;
+  --color-surface-container-high: #e5e9e6;
+  --color-surface-container-low: #f2f4f2;
+  --color-background: #f9f9f7;
+  --color-surface: #f9f9f7;
+  --color-on-tertiary-container: #5c5d4a;
+  --color-tertiary: #5f604d;
+  --color-tertiary-container: #f5f5dc;
+  --color-primary-dim: #525252;
+  --color-primary: #5e5e5e;
+  --color-tertiary-dim: #535442;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-background: #2d3432;
+  --color-cream: #f5f5dc;
+  --color-surface-dim: #d4dcd8;
+
+  --radius-DEFAULT: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-surface text-on-surface font-body m-0 min-h-screen;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  font-size: 1.25rem;
+}
+
+.hanging-headline {
+  margin-left: -2rem;
+}
+
+.hanging-indent {
+  margin-left: -2rem;
+}

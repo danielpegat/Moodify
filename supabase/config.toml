@@ -1,0 +1,10 @@
+# https://supabase.com/docs/guides/cli/config
+# Link your project with: npx supabase link --project-ref <ref>
+
+# Gateway JWT check can reject valid anonymous sessions after long OAuth redirects.
+# We still validate the Bearer token inside each function with auth.getUser(jwt).
+[functions.spotify-oauth]
+verify_jwt = false
+
+[functions.spotify-api]
+verify_jwt = false
